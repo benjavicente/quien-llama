@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quien me llama</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Quien compañía me llama">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Busca que compañía es la que te está llamando a partir del número de teléfono">
+    <meta property="og:url" content="https://benjavicente.github.io/quien-llama">
+</head>
+
+<body>
+    <main>
+        <h1>Que compañía me llama</h1>
+        <p>Busca si una compañía tiene registrado el número que te llamó.</p>
+        <span>
+            +56 <input id="number_input" type="text" maxlength="10" placeholder="# ########"
+            title="Número de teléfono a buscar" pattern="[0-9](?: [0-9]{0,8})?">
+        </span>
+        <div id="result_block">
+            <p id="result_info"></p>
+            <ul id="results">
+            </ul>
+        </div>
+        <p>Nota: El número puede ser particular, y la compañía es solo el agente registrador.</p>
+    </main>
+    <footer>
+        <p>
+            Por <a href="http://benjavicente.github.io">benjavicente</a>.
+            Licencia <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+    </footer>
+</body>
+
+</html>
